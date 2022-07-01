@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
 html {
   font-size: 14px;
 }
@@ -14,7 +16,8 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*My CSS ================================================================= */
@@ -40,4 +43,15 @@ body {
 .smallText{
     text-align: right;
     color: grey;
+}
+
+.makeYourOwnDiv{
+    border-radius: 20px;
+    background: rgba(50,50,50,.4);
+    margin: 0;
+}
+
+.makeYourOwnText {
+    margin: 100px 0 20px 0px;
+    color: white;
 }
