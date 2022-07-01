@@ -3,7 +3,7 @@
     public class PizzaModel
     {
         public string ImageTitle { get; set; }
-        public string PizzaName { get; set; }
+        public string PizzaName{ get; set; }
         public int BasePrice { get; set; } = 80;
         public bool TomatoSauce { get; set; }
         public bool Cheese { get; set; }

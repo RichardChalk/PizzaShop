@@ -8,8 +8,13 @@
         <h1 class="display-4 text-capitalize text-black">Your order</h1>
     </div>
 
+@*Define which pizza image should be diplayed*@
+@{ 
+    var imagePath = "~/images/Pizzas/" + (Model.ImageTitle + ".png");
+}
+
     <div class="col-3 mx-auto mb-5">
-        <img class="w-100" asp-append-version="true" />
+        <img src="@imagePath" class="w-100" asp-append-version="true" />
         <p>Your @Model.PizzaName Pizza order is ready!</p>
         <p>Price: @Model.Price sek</p>
         <br />
