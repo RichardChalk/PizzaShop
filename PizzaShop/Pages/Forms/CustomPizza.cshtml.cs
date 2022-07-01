@@ -8,8 +8,6 @@ namespace PizzaShop.Pages.Forms
     {
         [BindProperty]
         public PizzaModel Pizza { get; set; }
-        public int PizzaPrice { get; set; }
-
         public void OnGet()
         {
         }
@@ -19,14 +17,14 @@ namespace PizzaShop.Pages.Forms
             Pizza.Price = Pizza.BasePrice;
 
             //Extra cost for ingredients
-            if (Pizza.TomatoSauce) PizzaPrice += 20;
-            if (Pizza.Beef) PizzaPrice += 40;
-            if (Pizza.Cheese) PizzaPrice += 10;
-            if (Pizza.Ham) PizzaPrice += 20;
-            if (Pizza.Mushroom) PizzaPrice += 10;
-            if (Pizza.Peperoni) PizzaPrice += 30;
-            if (Pizza.Pineapple) PizzaPrice += 20;
-            if (Pizza.Tuna) PizzaPrice += 40;
+            if (Pizza.TomatoSauce) Pizza.Price += 20;
+            if (Pizza.Beef) Pizza.Price += 40;
+            if (Pizza.Cheese) Pizza.Price += 10;
+            if (Pizza.Ham) Pizza.Price += 20;
+            if (Pizza.Mushroom) Pizza.Price += 10;
+            if (Pizza.Peperoni) Pizza.Price += 30;
+            if (Pizza.Pineapple) Pizza.Price += 20;
+            if (Pizza.Tuna) Pizza.Price += 40;
 
             return RedirectToPage("/Checkout/Checkout", new {Pizza.PizzaName, Pizza.Price });
         }

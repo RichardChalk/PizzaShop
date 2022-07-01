@@ -3,5 +3,17 @@
 @{
 }
 
-<p>Checkout Page</p>
-<a class="nav-link text-dark" asp-area="" asp-page="/Checkout/ThankYou">Thank you link</a>
+<div class="text-center container">
+    <div class="mainText">
+        <h1 class="display-4 text-capitalize text-black">Your order</h1>
+    </div>
+
+    <div class="col-3 mx-auto mb-5">
+        <img class="w-100" asp-append-version="true" />
+        <p>Your @Model.PizzaName Pizza order is ready!</p>
+        <p>Price: @Model.Price sek</p>
+        <br />
+
+        <a class="btn btn-primary mt-1 mx-auto" asp-page="ThankYou">Confirm order</a>
+    </div>
+</div>
