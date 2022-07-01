@@ -32,3 +32,12 @@ body {
     font-weight: 400;
     letter-spacing: 2px;
 }
+
+.pizza-emoji{
+    font-size: 1.5rem;
+}
+
+.smallText{
+    text-align: right;
+    color: grey;
+}
