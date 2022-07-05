@@ -8,7 +8,7 @@ namespace PizzaShop.Data
         public DbSet<PizzaOrder> PizzaOrders { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) 
-            : base()
+            : base(options)
         {
 
         }

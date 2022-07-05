@@ -24,7 +24,8 @@ namespace PizzaShop.Pages
                 BasePrice = 80,
                 TomatoSauce = true,
                 Cheese = true,
-                Price = 120,
+                Pineapple = true,
+                Price = 140,
             },
             new PizzaModel()
             {
@@ -33,8 +34,40 @@ namespace PizzaShop.Pages
                 BasePrice = 80,
                 TomatoSauce = true,
                 Cheese = true,
-                Price = 120,
+                Tuna = true,
+                Price = 130,
             },
+            new PizzaModel()
+            {
+                ImageTitle = "Pepperoni",
+                PizzaName = "Peperoni",
+                BasePrice = 80,
+                TomatoSauce = true,
+                Cheese = true,
+                Peperoni = true,
+                Price = 140,
+            },
+            new PizzaModel()
+            {
+                ImageTitle = "Vegetarian",
+                PizzaName = "Vegetarian",
+                BasePrice = 80,
+                TomatoSauce = true,
+                Cheese = true,
+                Mushroom = true,
+                Price = 140,
+            },
+            new PizzaModel()
+            {
+                ImageTitle = "Arnold",
+                PizzaName = "Arnold Special",
+                BasePrice = 80,
+                TomatoSauce = true,
+                Cheese = true,
+                Bullets = true,
+                Price = 180,
+            },
+
 
         };
         public void OnGet()
