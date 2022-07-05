@@ -51,6 +51,10 @@ body {
     margin: 0;
 }
 
+.makeYourOwnImg {
+    border-radius: 20px;
+}
+
 .makeYourOwnText {
     margin: 100px 0 20px 0px;
     color: white;

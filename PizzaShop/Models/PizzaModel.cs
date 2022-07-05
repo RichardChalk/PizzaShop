@@ -7,6 +7,7 @@
         public int BasePrice { get; set; } = 80;
         public bool TomatoSauce { get; set; }
         public bool Cheese { get; set; }
+        public bool Bullets { get; set; }
         public bool Peperoni { get; set; }
         public bool Mushroom { get; set; }
         public bool Tuna { get; set; }

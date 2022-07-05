@@ -21,6 +21,7 @@ namespace PizzaShop.Pages.Forms
             if (Pizza.Beef) Pizza.Price += 40;
             if (Pizza.Cheese) Pizza.Price += 10;
             if (Pizza.Ham) Pizza.Price += 20;
+            if (Pizza.Bullets) Pizza.Price += 60;
             if (Pizza.Mushroom) Pizza.Price += 10;
             if (Pizza.Peperoni) Pizza.Price += 30;
             if (Pizza.Pineapple) Pizza.Price += 20;
