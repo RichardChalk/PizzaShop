@@ -2,3 +2,38 @@
 @model PizzaShop.Pages.OrdersModel
 @{
 }
+
+<div class="text-center">
+    <div class="mainText">
+        <h1 class="display-4 text-capitalize text-black">Order history</h1>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Pizza
+            </th>
+            <th>
+                Price
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var order in Model.PizzaOrders)
+        {
+            <tr>
+                <td>@order.Id</td>
+                <td>@order.PizzaName</td>
+                <td>@order.BasePrice kr</td>
+            </tr>      
+        }
+      
+    </tbody>
+    
+</table>
