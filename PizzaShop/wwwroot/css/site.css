@@ -69,3 +69,19 @@ body {
     border-radius: 20px;
 }
 
+
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+    .mainImage {
+        width: 300px;
+        margin: 0;
+    }
+
+    .orderPizza-img{
+        display: flex;
+        align-items: center;
+    }
+
+    .custom-form{
+    }
+}
